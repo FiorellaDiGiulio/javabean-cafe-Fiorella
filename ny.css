@@ -1,1 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(94, 2, 94);
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
 
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobil först: Meny dold */
+
+#menu {
+    display:none;
+    flex-direction: column;
+    background-color: #cba3db;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menu a {
+color: white;
+text-decoration: none;
+padding: 8px 0;
+display: block;
+}
+
+#hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Menyn synlig när den har 'open'-klassen*/
+
+#menu.open {
+    display: flex;
+}
+
+/* större skärmar - menyn alltid synlig, hamburger döljs */
+@media (min-width: 763px) {
+    #menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+        padding: 0;
+    }
+
+#menu a {
+    padding: 0 10px;
+}
+
+#hamburger {
+    display: none;
+}
+}

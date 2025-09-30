@@ -1,7 +1,15 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: blueviolet;
+    font-family: Arial, sans-serif;
+    background-color: rgb(94, 2, 94);
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
 }
 
 /* Navbar */
@@ -30,7 +38,7 @@ body {
 #menu {
     display:none;
     flex-direction: column;
-    background-color: #333;
+    background-color: #cba3db;
     position: absolute;
     top: 50px;
     right: 0;
@@ -90,4 +98,5 @@ display: block;
     display: none;
 }
 }
+
 
